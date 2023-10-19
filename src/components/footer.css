@@ -1,0 +1,16 @@
+.footer-page {
+    /* height: 100vh; Set a fixed height (viewport height) */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    background-color: rgb(131, 131, 131); /* Add your desired background color */
+  }
+
+  .plus-image {
+    position: fixed; /* Position the image absolutely */
+    height: auto;
+    top: 0; /* Position it at the bottom of the parent container */
+    left: 0; /* Center it horizontally */
+  }

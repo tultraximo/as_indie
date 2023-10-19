@@ -10,6 +10,15 @@
 }
 
 .centered-image {
-  width: 200px; /* Adjust the width of the image as needed */
+  width: 75%; /* Adjust the width of the image as needed */
   height: auto; /* Maintain aspect ratio */
+}
+
+.cbottom-image {
+  width: 75%; /* Adjust the width of the image as needed */
+  height: 2px; /* Maintain aspect ratio */
+  position: absolute; /* Position the image absolutely */
+  top: 100%; /* Position it at the bottom of the parent container */
+  left: 50%; /* Center it horizontally */
+  transform: translateX(-50%); /* Center it horizontally */
 }

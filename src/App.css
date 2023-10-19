@@ -9,18 +9,24 @@
   bottom: 0;
   background-color: rgb(211, 209, 187); /* Set the background color using RGB values */
 
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  min-height: 100vh;
-  margin: 0 auto; /* Center the element */
-  width: 70%; /* Set width to 70% of the viewport width */
-  max-width: 70%; /* Set a maximum width of 70% */
-  background-color: rgb(211, 209, 187); /* Add your desired background color */
-  overflow-y: scroll; /* Enable vertical scrolling */
-}
+  .App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+    margin: 0 auto; /* Center the element */
+    width: 70%; /* Set width to 70% of the viewport width */
+    max-width: 70%; /* Set a maximum width of 70% */
+    background-color: rgb(211, 209, 187); /* Add your desired background color */
+    overflow-y: scroll; /* Enable vertical scrolling */
+  }
+
+  .content-container {
+    margin-top: 100px; /* Adjust the top margin to match the header's height */
+    margin-bottom: 100px; /* Adjust the bottom margin to match the footer's height */
+    overflow-y: auto; /* Enable vertical scrolling when the content overflows */
+  }
 
 .App-logo {
   height: 40vmin;
