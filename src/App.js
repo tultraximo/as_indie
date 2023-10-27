@@ -1,20 +1,15 @@
 import logo from './logo.svg';
-import './App.css';
-import Header from './components/header.js';
-import Footer from './components/footer.js';
-import Contact from './components/contact';
-import About from './components/about';
-import Home from './components/home';
+import Header from './components/Header'
+import Content from './components/Content';
+import Footer from './components/Footer';
+
 
 function App() {
   return (
-    <div className="App">
-      <Header></Header>
-      <div className="content-container">
-      <Home></Home>
-      <About></About>
-      </div>
-      <Footer></Footer>
+    <div className="min-h-screen bg-custom-color">
+      <Header />
+      <Content />
+      <Footer />
     </div>
   );
 }
