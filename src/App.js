@@ -1,15 +1,14 @@
-import logo from './logo.svg';
-import Header from './components/Header'
-import Content from './components/Content';
-import Footer from './components/Footer';
-
+import logo from "./logo.svg";
+import Content from "./components/Content";
+import Top from './components/Top';
+import Bottom from "./components/Bottom";
 
 function App() {
   return (
     <div className="min-h-screen bg-custom-color">
-      <Header />
+      <Top />
       <Content />
-      <Footer />
+      <Bottom />
     </div>
   );
 }

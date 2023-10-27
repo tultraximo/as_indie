@@ -3,7 +3,7 @@ import plus from '../assets/Indie_plus-mark_02.png'
 import headerLogo from '../assets/Indie_Primary-Wordmark.png'
 import contactLogo from '../assets/Indie_Website_102423_03.png'
 
-const Header = () => {
+const Top = () => {
     return (
         <header className="bg-custom-color text-black h-14 flex items-center justify-between sticky top-0 z-10 px-4">
             {/* Plus-mark aligned to the left */}
@@ -25,4 +25,4 @@ const Header = () => {
         </header>
       );
     }
-export default Header
+export default Top

@@ -7,7 +7,7 @@ import city_state from "../assets/Indie_Website_102423-10.png";
 import vc_logo from "../assets/Indie_Website_102423_02.png";
 import contact from "../assets/Indie_Website_102423_03.png"
 
-function Footer() {
+function Bottom() {
   return (
     <footer className="bg-custom-color text-white h-14 flex items-center justify-between fixed bottom-0 z-10 px-4 w-full">
       {/* Plus-mark aligned to the left */}
@@ -23,4 +23,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default Bottom;
