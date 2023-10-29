@@ -12,8 +12,28 @@
 @media (min-width: 1024px) {
   .newsletter-paragraph {
     display: none;
-  }
+  };
+
 }
+
+@media (max-width: 1024px) {
+  .contact-top {
+    display: none;
+  }
+
+  .logo-top {
+    margin-right: 140px;
+  }
+
+}
+
+.contact-top {
+  margin-left: 140px;
+  text-align:right;
+  margin-right: -220px;
+}
+
+
 
 body {
   margin: 0;

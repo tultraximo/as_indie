@@ -15,23 +15,29 @@ const Top = () => {
     return (
         <header className="bg-custom-color text-black h-14 flex items-center justify-between sticky top-0 z-10 w-full">
             {/* Plus-mark aligned to the left */}
-
             <img src={plus} alt="Plus" className="h-14" />
+
+
+            <p className="font-custom text-[1.8rem] contact-top">
+            Contact
+            </p>
+
 
             {/* Header logo aligned to the center */}
             <div className="flex-grow flex justify-center">
                 <a className="hover:underline">
                     <img
+
                     src={headerLogo}
                     alt="Header Logo"
-                    className="h-14"
+                    className="h-14 logo_top"
                     onClick={scrollToOffsetTop}
                     />
                 </a>
             </div>
 
             {/* Plus-mark aligned to the right */}
-            <img src={plus} alt="Plus" className="h-14 object-fit: cover" />
+            <img src={plus} alt="Plus" className="h-14" />
         </header>
       );
     }
