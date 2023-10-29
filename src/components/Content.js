@@ -5,11 +5,11 @@ const Content = () => {
   return (
     <div className="flex-1 overflow-y-auto p-4">
 
-      <div style={{ height: "180px" }}></div>
+      <div className="h-44"></div>
 
       <img src={logoMark} alt="logomark" />
 
-      <div style={{ height: "265px" }}></div>
+      <div className="h-64"></div>
 
       <div className="space-y-14 sm:space-y-8 md:space-y-12 lg:space-y-28 mx-12 sm:mx-4 md:mx-32 lg:mx-40">
         <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[8.25rem] text-center mb-0 leading-[.875]">
@@ -37,7 +37,7 @@ const Content = () => {
         </p>
         <div style={{ height: "63px" }}></div>
 
-        <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[8.25rem] text-center mb-0 leading-[.875]">
+        <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[4.75rem] text-center mb-0 leading-[.875]">
 
           <a id="contact-anchor">CALL:</a>
 
@@ -48,14 +48,14 @@ const Content = () => {
           </a>
         </p>
 
-        <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[8.25rem] text-center mb-0 leading-[.875]">
+        <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[4.75rem] text-center mb-0 leading-[.875]">
           EMAIL:<br></br>
           <a href="mailto:bryce@indie.vc" class="hover:underline">
             bryce@indie.vc
           </a>
         </p>
 
-        <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[8.25rem] text-center mb-0 leading-[.875]">
+        <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[4.75rem] text-center mb-0 leading-[.875]">
           FOLLOW:<br></br>
           <a href="https://instagram.com/INDIEVC" class="hover:underline">
             @INDIE.VC
