@@ -4,9 +4,8 @@ import logoMark from "../assets/Indie_Logomark.png";
 const Content = () => {
   return (
     <div className="flex-1 overflow-y-auto p-4">
-      <div id="home-anchor" style={{ height: "10px" }}></div>
 
-      <div style={{ height: "170px" }}></div>
+      <div style={{ height: "180px" }}></div>
 
       <img src={logoMark} alt="logomark" />
 
@@ -70,7 +69,7 @@ const Content = () => {
         </p>
       </div>
 
-      <div style={{ height: "123px" }}></div>
+      <div style={{ height: "132px" }}></div>
     </div>
   );
 };

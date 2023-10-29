@@ -8,13 +8,34 @@ import vc_logo from "../assets/Indie_Website_102423_02.png";
 import contact from "../assets/Indie_Website_102423_03.png"
 
 function Bottom() {
+
+  const scrollToBottom = () => {
+
+    const documentHeight = document.documentElement.scrollHeight;
+    const viewportHeight = window.innerHeight;
+
+    window.scrollTo({
+        top: documentHeight - viewportHeight, // Scrolls to the bottom
+        behavior: 'smooth'
+    });
+  };
+
   return (
-    <footer className="bg-custom-color text-white h-14 flex items-center justify-between fixed bottom-0 z-10 px-4 w-full">
+    <footer className="bg-custom-color text-white h-14 flex items-center justify-between fixed bottom-0 z-10 w-full">
       {/* Plus-mark aligned to the left */}
       <img src={plus} alt="Plus" className="h-14" />
 
       <div className="flex-grow flex justify-center">
-      <a href="#contact-anchor" ><img src={contact} alt="Header Logo" className="h-14" /></a>
+      <a className="hover:underline">
+
+        <img
+          src={contact}
+          alt="contact Logo"
+          className="h-14"
+          onClick={scrollToBottom}
+        />
+
+      </a>
     </div>
 
       {/* Plus-mark aligned to the right */}
