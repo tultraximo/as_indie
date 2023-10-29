@@ -9,6 +9,12 @@
   font-style: normal;
 }
 
+@media (min-width: 1024px) {
+  .newsletter-paragraph {
+    display: none;
+  }
+}
+
 body {
   margin: 0;
   background-color: rgb(255, 255, 255); /* Unified background color */

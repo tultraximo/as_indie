@@ -61,7 +61,7 @@ const Content = () => {
             @INDIE.VC
           </a>
         </p>
-        <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[8.25rem] text-center mb-0 leading-[.875]">
+        <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[8.25rem] text-center mb-0 leading-[.875] newsletter-paragraph">
           SIGN UP FOR OUR<br></br>
           <a href="" className="hover:underline custom-underline">
             NEWSLETTER
