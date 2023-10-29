@@ -5,7 +5,7 @@ const Content = () => {
   return (
     <div className="flex-1 overflow-y-auto p-4">
 
-      <div className="h-44"></div>
+      <div className="h-24"></div>
 
       <img src={logoMark} alt="logomark" />
 

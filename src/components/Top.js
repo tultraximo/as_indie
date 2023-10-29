@@ -12,16 +12,25 @@ const Top = () => {
         });
     };
 
+    const scrollToBottom = () => {
+
+        const documentHeight = document.documentElement.scrollHeight;
+        const viewportHeight = window.innerHeight;
+
+        window.scrollTo({
+            top: documentHeight - viewportHeight, // Scrolls to the bottom
+            behavior: 'smooth'
+        });
+      };
+
     return (
         <header className="bg-custom-color text-black h-14 flex items-center justify-between sticky top-0 z-10 w-full">
             {/* Plus-mark aligned to the left */}
             <img src={plus} alt="Plus" className="h-14" />
 
-
-            <p className="font-custom text-[1.8rem] contact-top">
-            Contact
-            </p>
-
+            <a href="#bottom" className="hover:underline">
+                <p onClick={scrollToBottom} className="font-custom text-[1.8rem] contact-top">Contact</p>
+            </a>
 
             {/* Header logo aligned to the center */}
             <div className="flex-grow flex justify-center">
