@@ -39,8 +39,12 @@ const Content = () => {
         <div style={{ height: "63px" }}></div>
 
         <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[8.25rem] text-center mb-0 leading-[.875]">
-          CALL:<br></br>
-          <a id="contact-anchor" href="tel:4158285779" class="hover:underline">
+
+          <a id="contact-anchor">CALL:</a>
+
+          <br></br>
+
+          <a href="tel:4158285779">
             415.828.5779
           </a>
         </p>
