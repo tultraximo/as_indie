@@ -4,16 +4,15 @@ import logoMark from "../assets/Indie_Logomark.png";
 const Content = () => {
   return (
     <div className="flex-1 overflow-y-auto">
-      <div className="sm:h-64 md:h-52 lg:h-36 xl:h-10"></div>
-
-      {/* <div style={{ height: "40px" }}></div> */}
 
 
-      <img src={logoMark} alt="logomark" />
+      <div className="flex justify-center items-center h-screen">
+        <div className="mt-[-50%] md:mt-[-6.5%]"> {/* Adjust this percentage as needed */}
+        <img src={logoMark} alt="logomark" className="max-h-full mx-auto" />
+       </div>
+      </div>
 
-      <div className="h-64"></div>
-
-      <div className=" sm:space-y-8 md:space-y-12 lg:space-y-28 mx-12 sm:mx-24 md:mx-32 lg:mx-40">
+      <div className="space-y-14 sm:space-y-8 md:space-y-12 lg:space-y-28 mx-12 sm:mx-24 md:mx-32 lg:mx-40">
         <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[5.5rem] xl:text-[8.25rem] text-center mb-0 leading-[.875]">
           WE BELIEVE THE NEXT WAVE OF GENERATIONAL COMPANIES WILL BE BUILT BY
           FIERCELY INDEPENDENT FOUNDERS.
@@ -70,7 +69,7 @@ const Content = () => {
         </p>
       </div>
 
-      <div style={{ height: "132px" }}></div>
+      <div style={{ height: "147px" }}></div>
     </div>
   );
 };
