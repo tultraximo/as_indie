@@ -52,12 +52,12 @@ const Top = () => {
 
             {/* Header logo aligned to the center */}
             <div className="flex-grow flex justify-center">
-                <a className="hover:underline">
+                <a className="hover:underline cursor-pointer">
                     <img
 
                     src={headerLogo}
                     alt="Header Logo"
-                    className="h-14 logo_top"
+                    className="h-14 "
                     onClick={scrollToOffsetTop}
                     />
                 </a>

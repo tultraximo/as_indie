@@ -31,7 +31,7 @@ function Bottom() {
       VC</p>
 
       <p className="font-custom text-[1.6rem] images-bottom city_state-bottom">
-      Park, City, UT</p>
+      Park City, UT</p>
 
       <p className="font-custom text-[1.6rem] images-bottom city_state-bottom">
       @indie.vc</p>
@@ -58,7 +58,7 @@ function Bottom() {
         </a> */}
 
       <div className="flex-grow flex justify-center newsletter-paragraph">
-      <a className="hover:underline ">
+      <a className="hover:underline cursor-pointer">
 
         <img
           src={contact}
