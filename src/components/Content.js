@@ -4,14 +4,13 @@ import logoMark from "../assets/Indie_Logomark.png";
 const Content = () => {
   return (
     <div className="flex-1 overflow-y-auto p-4">
-
-      <div className="h-40"></div>
+      <div className="h-24"></div>
 
       <img src={logoMark} alt="logomark" />
 
       <div className="h-64"></div>
 
-      <div className="space-y-14 sm:space-y-8 md:space-y-12 lg:space-y-28 mx-12 sm:mx-4 md:mx-32 lg:mx-40">
+      <div className="space-y-14 sm:space-y-8 md:space-y-12 lg:space-y-28 mx-12 sm:mx-24 md:mx-32 lg:mx-40">
         <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[8.25rem] text-center mb-0 leading-[.875]">
           WE BELIEVE THE NEXT WAVE OF GENERATIONAL COMPANIES WILL BE BUILT BY
           FIERCELY INDEPENDENT FOUNDERS.
@@ -38,14 +37,11 @@ const Content = () => {
         <div style={{ height: "63px" }}></div>
 
         <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[4.75rem] text-center mb-0 leading-[.875]">
-
           <a id="contact-anchor">CALL:</a>
 
           <br></br>
 
-          <a href="tel:4158285779">
-            415.828.5779
-          </a>
+          <a href="tel:4158285779">415.828.5779</a>
         </p>
 
         <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[4.75rem] text-center mb-0 leading-[.875]">
