@@ -38,7 +38,7 @@ const Content = () => {
         </p>
         <div style={{ height: "63px" }}></div>
 
-        <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[4.75rem] text-center mb-0 leading-[.875]">
+        <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[5.5rem] xl:text-[8.25rem] text-center mb-0 leading-[.875]">
           <a id="contact-anchor">CALL</a>
 
           <br></br>
@@ -48,20 +48,20 @@ const Content = () => {
           </a>
         </p>
 
-        <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[4.75rem] text-center mb-0 leading-[.875]">
+        <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[5.5rem] xl:text-[8.25rem] text-center mb-0 leading-[.875]">
           EMAIL<br></br>
           <a href="mailto:bryce@indie.vc" class="hover:underline">
             bryce@indie.vc
           </a>
         </p>
 
-        <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[4.75rem] text-center mb-0 leading-[.875]">
+        <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[5.5rem] xl:text-[8.25rem] text-center mb-0 leading-[.875]">
           FOLLOW<br></br>
           <a href="https://instagram.com/INDIEVC" class="hover:underline">
             @INDIE.VC
           </a>
         </p>
-        <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[3rem] lg:text-[8.25rem] text-center mb-0 leading-[.875] newsletter-paragraph">
+        <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[5.5rem] xl:text-[8.25rem] text-center mb-0 leading-[.875] newsletter-paragraph">
           SIGN UP FOR OUR<br></br>
           <a href="" className="hover:underline">
             NEWSLETTER
