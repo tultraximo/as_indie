@@ -7,7 +7,7 @@ const Content = () => {
 
 
       <div className="flex justify-center items-center h-screen">
-        <div className="mt-[-50%] sm:mt-[-15%] md:mt-[-12%] lg:mt-[-9%] xl:mt-[-6.5%]"> {/* Adjust this percentage as needed */}
+        <div className="mt-[-56%] sm:mt-[-15%] md:mt-[-12%] lg:mt-[-9%] xl:mt-[-6.75%]"> {/* Adjust this percentage as needed */}
         <img src={logoMark} alt="logomark" className="max-h-full mx-auto" />
        </div>
       </div>
@@ -39,7 +39,7 @@ const Content = () => {
         <div style={{ height: "63px" }}></div>
 
         <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[5.5rem] xl:text-[8.25rem] text-center mb-0 leading-[.875]">
-          <a id="contact-anchor">CALL</a>
+          <a >CALL</a>
 
           <br></br>
 
@@ -63,13 +63,13 @@ const Content = () => {
         </p>
         <p className="font-custom text-[1.8rem] sm:text-[2rem] md:text-[5.5rem] xl:text-[8.25rem] text-center mb-0 leading-[.875] newsletter-paragraph">
           SIGN UP FOR OUR<br></br>
-          <a href="" className="hover:underline">
+          <a href="" class="hover:underline">
             NEWSLETTER
           </a>
         </p>
       </div>
 
-      <div style={{ height: "147px" }}></div>
+      <div id="contact-anchor" style={{ height: "147px" }}></div>
     </div>
   );
 };

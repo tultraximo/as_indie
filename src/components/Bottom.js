@@ -33,7 +33,7 @@ function Bottom() {
       <p className="font-custom text-[1.6rem] images-bottom city_state-bottom">
       Park City, UT</p>
 
-      <a href="https://instagram.com/INDIEVC" className="font-custom text-[1.6rem] images-bottom city_state-bottom hover:underline">
+      <a href="https://instagram.com/INDIEVC" className="font-custom text-[1.6rem] images-bottom city_state-bottom">
         @indie.vc
       </a>
 
@@ -74,8 +74,8 @@ function Bottom() {
       {/* Plus-mark aligned to the right */}
 
       <div className="flex items-center justify-between">
-      <p className="font-custom text-[1.6rem] images-bottom newsletter-bottom">
-      Sign up for our NEWSLETTER</p>
+      <a href=""><p className="font-custom text-[1.6rem] images-bottom newsletter-bottom cursor-pointer">
+      Sign up for our NEWSLETTER</p></a>
 
       <img src={plus} alt="Plus" className="h-14" />
 
