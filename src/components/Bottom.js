@@ -33,8 +33,9 @@ function Bottom() {
       <p className="font-custom text-[1.6rem] images-bottom city_state-bottom">
       Park City, UT</p>
 
-      <p className="font-custom text-[1.6rem] images-bottom city_state-bottom">
-      @indie.vc</p>
+      <a href="https://instagram.com/INDIEVC" className="font-custom text-[1.6rem] images-bottom city_state-bottom hover:underline">
+        @indie.vc
+      </a>
 
       {/* <a className="hover:underline">
         <img
@@ -63,7 +64,7 @@ function Bottom() {
         <img
           src={contact}
           alt="contact Logo"
-          className="h-14 "
+          className="h-14"
           onClick={scrollToBottom}
         />
 

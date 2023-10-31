@@ -35,10 +35,12 @@ const Top = () => {
                 Contact</p>
             </a> */}
 
-
-            <p onClick={scrollToBottom} className="font-custom text-[1.8rem] contact-top">
-            Contact</p>
-
+            <p>
+            <a href="#!" onClick={(e) => { e.preventDefault(); scrollToBottom(); }} className="font-custom text-[1.56rem] contact-top cursor-pointer">
+                Contact
+            </a>
+            </p>
+            
 
             {/* <a className="hover:underline">
             <img

@@ -7,7 +7,7 @@ const Content = () => {
 
 
       <div className="flex justify-center items-center h-screen">
-        <div className="mt-[-50%] sm:mt-[-6.5%]"> {/* Adjust this percentage as needed */}
+        <div className="mt-[-50%] sm:mt-[-15%] md:mt-[-12%] lg:mt-[-9%] xl:mt-[-6.5%]"> {/* Adjust this percentage as needed */}
         <img src={logoMark} alt="logomark" className="max-h-full mx-auto" />
        </div>
       </div>
