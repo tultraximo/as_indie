@@ -1,10 +1,29 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import plus from "../assets/Indie_plus-mark_02.png";
-import headerLogo from "../assets/Indie_Primary-Wordmark.png";
+import headerWordmark from "../assets/Indie_Primary-Wordmark.png";
+import headerLogomark from "../assets/Indie_Logomark.png"
 import contact from "../assets/Indie_Website_102423_03.png";
 
 const Top = () => {
-  // Function to handle the click and scroll smoothly to 100px from the top
+
+  const [currentLogo, setCurrentLogo] = useState(headerLogomark); // Initialize with the first image
+  const [switchCount, setSwitchCount] = useState(0)
+
+  useEffect(() => {
+    // Only set up the interval if we haven't switched three times yet
+    if (switchCount < 6) {
+      const timer = setTimeout(() => {
+        // Switch the logo
+        setCurrentLogo(currentLogo === headerLogomark ? headerWordmark : headerLogomark);
+        // Increment the switch counter
+        setSwitchCount(switchCount + 1);
+      }, 1000); // Switch every 2 seconds
+
+      // Clear the timeout if the component unmounts or the switch count changes
+      return () => clearTimeout(timer);
+    }
+    // The dependencies array contains currentLogo and switchCount, so the effect will re-run when these change
+  }, [currentLogo, switchCount]);
 
   const scrollToOffsetTop = () => {
     window.scrollTo({
@@ -36,7 +55,7 @@ const Top = () => {
       <div className="flex-grow flex justify-center logo-top cursor-pointer">
         <a className="hover:underline">
           <img
-            src={headerLogo}
+            src={currentLogo}
             alt="Header Logo"
             className="h-14"
             onClick={scrollToOffsetTop}

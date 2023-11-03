@@ -1,14 +1,39 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logoMark from "../assets/Indie_Logomark.png";
+import wordMark from "../assets/Indie_Primary-Wordmark.png";
 
 const Content = () => {
+  const [currentLogo, setCurrentLogo] = useState(wordMark); // Initialize with the first image
+  const [switchCount, setSwitchCount] = useState(0)
+
+
+
+  useEffect(() => {
+    // Only set up the interval if we haven't switched three times yet
+    if (switchCount < 6) {
+      const timer = setTimeout(() => {
+        // Switch the logo
+        setCurrentLogo(currentLogo === logoMark ? wordMark : logoMark);
+        // Increment the switch counter
+        setSwitchCount(switchCount + 1);
+      }, 1000); // Switch every 2 seconds
+
+      // Clear the timeout if the component unmounts or the switch count changes
+      return () => clearTimeout(timer);
+    }
+    // The dependencies array contains currentLogo and switchCount, so the effect will re-run when these change
+  }, [currentLogo, switchCount]);
+
+
+
+
   return (
     <div className="flex-1 overflow-y-auto">
 
 
       <div className="flex justify-center items-center h-screen">
         <div className="mt-[-56%] sm:mt-[-15%] md:mt-[-12%] lg:mt-[-9%] xl:mt-[-6.75%]"> {/* Adjust this percentage as needed */}
-        <img src={logoMark} alt="logomark" className="max-h-full mx-auto" />
+        <img src={currentLogo} alt="logomark" className="max-h-full mx-auto" />
        </div>
       </div>
 
